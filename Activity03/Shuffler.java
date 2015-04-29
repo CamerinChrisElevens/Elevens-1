@@ -76,7 +76,7 @@ public class Shuffler {
             k=k+2;
             cards[j] = shuffled[k];
         }
-        return shuffled;
+        
     }
 
     /**
@@ -93,6 +93,7 @@ public class Shuffler {
 
     public static void selectionShuffle(int[] values) {
         int j = (int)(52* Math.random());
+        int k= 0;
         int []shuffled = new int[52];
         for (k=0; k<52; k++)
         {
@@ -102,6 +103,6 @@ public class Shuffler {
             shuffled[k] = values[j];
             values[j] = 0;
         }
-        return shuffled;
+        
     }
 }
